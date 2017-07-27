@@ -1,0 +1,31 @@
+﻿Part 1: HitCounterController class
+- Step 1: Create temp folder in C folder
+- Step 2: Create hits.txt, asume hit counter start at 100000 in temp folder
+- Step 3: Create 3 function (service, init, destroy) in HitCounterController
+- Step 4: Write code in those 3 functions to read and write on start number of hit counter 
+(hit counter number: Number of server runs from scratch and have call destroy() function)
+- Step 5: in this servlet, we create servlet tags in web.xml to run file instead of annotation
+- Step 6: run HitCounterController and see console, every service() be called we have once time run server
+- Step 7: run HitCounter several times. After that, 
+change code anywhere without change code affecting the functionality of the program
+- Step 8: check hits.txt file in temp folder to know number of HitCounter
+
+Part 2: ScopeServlet class
+- Step 1: run file scope.jsp, we have do not anything at each li tag, don't turn off this web page
+- Step 2: run ScopeServlet class, we have value of a, b, c are 2017, 2018, 2019
+- Step 3: copy url of web page when you run scope.jsp the first time and paste in other web browser
+we will have value of parameter c (application scope)
+- Step 4: copy url of web page when you run ScopeServlet class, we have all of value.
+But when we do Part 3, when login user account, run step 1, 2, 3 again and do step 4 like
+above, we do not have value of parameter b (session scope) -> because different sessions
+
+Part 3: LoginServlet
+- Step 1: Create web.entity package, create entities like eshop project
+- Step 2: Cope file eshop.cfg.xml in eshop project, rename is web.cfg.xml
+- Step 3: In EShopV10 class at web.entity package, config code in openSession function from eshop.cfg.xml to web.cfg.xml
+- Step 4: Create LoginServlet in web.servlet package and write code in this 
+(see code lines in this class to know how to use cookie to remember username, password when login)
+- Step 5: Create login.jsp, profile.jsp in WebContent folder to conjunction with LoginServlet to learn about Cookie
+- Step 6: Run ScopeServlet class again to know more about 3 scope when login user account
+
+Database: still EShopV10
